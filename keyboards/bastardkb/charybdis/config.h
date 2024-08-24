@@ -34,24 +34,6 @@
 
 /* RGB matrix support. */
 #ifdef RGB_MATRIX_ENABLE
-#    define SPLIT_TRANSPORT_MIRROR
-#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
-#    define RGB_DISABLE_WHEN_USB_SUSPENDED
-#    define RGB_MATRIX_KEYPRESSES
-
-// Startup values.
-#    define RGB_MATRIX_STARTUP_HUE 0
-#    define RGB_MATRIX_STARTUP_SAT 255
-#    define RGB_MATRIX_STARTUP_VAL 64
-#    define RGB_MATRIX_STARTUP_HSV RGB_MATRIX_STARTUP_HUE, RGB_MATRIX_STARTUP_SAT, RGB_MATRIX_STARTUP_VAL
-
-// Rainbow swirl as startup mode.
-#    define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT
-#    define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_LEFT_RIGHT
-
-// Slow swirl at startup.
-#    define RGB_MATRIX_STARTUP_SPD 32
-
 #    ifndef __arm__
 // Disable control of RGB matrix by keycodes (must use firmware implementation
 // to control the feature).
